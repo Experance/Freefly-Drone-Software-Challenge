@@ -1,0 +1,8 @@
+# X Y Z coordinates (in meters relative to home) X -> East, Y -> North, Z -> Down
+0 0 -5
+5 0 -5
+5 5 -5
+0 5 -5
+0 0 -5
+
+
