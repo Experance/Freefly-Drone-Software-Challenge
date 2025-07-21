@@ -69,17 +69,18 @@ python3 main.py
 ```
 
 ### 3. Screen Capture Video
-A screen capture of my module controlling the drone is provided: 
+A screen capture of my module controlling the drone can be found at this link: https://youtu.be/1DCSr6_9OyE.
 
 ### 4. Log
 The log can be accessed online here: https://logs.px4.io/plot_app?log=5b2815de-1597-438c-bee4-fada2dfc86cf
-And downloaded here: 
+and downloaded [here](log_6_2025-7-20-18-49-21.ulg)
 
 This image from those logs shows the drone is flying to different waypoints correctly.
-![[Pasted image 20250720192518.png]]
+<img width="1343" height="885" alt="Pasted image 20250720192518" src="https://github.com/user-attachments/assets/6829dec5-0a14-45bd-9caf-0631b1c3eddf" />
 
 
-Likewise, the fact that the altitude was not change after the initial going up to 5m and landing is confirmed: ![[Pasted image 20250720192616.png]]
+Likewise, the fact that the altitude was not change after the initial going up to 5m and landing is confirmed: 
+<img width="1306" height="696" alt="Pasted image 20250720192616" src="https://github.com/user-attachments/assets/c307b39a-91d3-404e-8a2d-52dd9b92ca5d" />
 
 
 ### 5. Considerations made in design
