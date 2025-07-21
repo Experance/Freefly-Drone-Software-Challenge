@@ -79,11 +79,35 @@ This image from those logs shows the drone is flying to different waypoints corr
 <img width="1343" height="885" alt="Pasted image 20250720192518" src="https://github.com/user-attachments/assets/6829dec5-0a14-45bd-9caf-0631b1c3eddf" />
 
 
-Likewise, the fact that the altitude was not change after the initial going up to 5m and landing is confirmed: 
+Likewise, the fact that the altitude was not change after the initial going up to 5m and landing is confirmed by the following image: 
 <img width="1306" height="696" alt="Pasted image 20250720192616" src="https://github.com/user-attachments/assets/c307b39a-91d3-404e-8a2d-52dd9b92ca5d" />
 
 
 ### 5. Considerations made in design
+- Module connects via MAVSDK to PX4
+- Accepts a text file of waypoints (relative coordinates)
+- Converts local offsets to GPS using drone's initial telemetry
+- Uploads mission to PX4 and monitors mission progress
 
+## Compatibility
+- Works with PX4-compatible drones
+- Modular enough to support Freefly Alta X and others
+- Waypoints can be generated from CAD tools or exported
+
+## Safety & Failsafes
+- Ensures drone is armed and takes off properly
+- Listens to mission progress; lands upon completion
+- Stops if an exception or error occurs (e.g., mission denied)
+
+## Future Work
+- Obstacle avoidance
+- Dynamic waypoint injection during flight
+- Multi-drone synchronized foam printing
+
+## From Sim to Real Drone
+1. Tune PID and GPS failsafes for real world
+2. Add geofencing for test environment
+3. Test with Freefly via USB telemetry
+4. Gradually move from hover to full path execution
 
 
